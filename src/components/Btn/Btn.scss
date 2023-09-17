@@ -1,0 +1,11 @@
+.btn {
+  background: var(--primary);
+  padding: 1.2rem 2.4rem;
+  text-transform: uppercase;
+  color: var(--text-white);
+  transition: .5s all;
+
+  &:hover {
+    background: var(--hover);
+  }
+}

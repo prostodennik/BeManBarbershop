@@ -1,0 +1,43 @@
+.header {
+  border-bottom: 1px solid var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    margin: 0 2.3rem 0 0;
+    cursor: pointer;
+    transition: .5s all;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:hover {
+      color: var(--hover);
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+
+    &-left {
+      margin: 0 7rem 0 0;
+    }
+
+    &-right {
+      display: flex;
+    }
+
+    &-location {
+      margin: 0 1.9rem 0 0;
+    }
+  }
+}
