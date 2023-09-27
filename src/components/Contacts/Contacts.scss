@@ -1,0 +1,16 @@
+.contacts {
+  padding: 6rem 0 0;
+  margin: 0 0 6rem;
+
+  &__title {
+    text-align: center;
+    margin: 0 0 2.4rem;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6rem;
+  }
+}

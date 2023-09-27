@@ -1,11 +1,10 @@
-import React from 'react';
-import "./Top.scss"
-import TopImgRight from "../../assets/images/top-right.png"
-
-import Btn from "../Btn/Btn"
-
+import React, { useState } from 'react';
+import "./Top.scss";
+import TopImgRight from "../../assets/images/top-right.png";
+import Btn from "../Btn/Btn";
 
 const Top = () => {
+
   return (
     <div className='top'>
       <div className="top__left">
