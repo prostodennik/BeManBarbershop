@@ -1,5 +1,21 @@
+@import "../../media.scss";
+
 .photo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 6rem 0 0;
+  gap: 2.4rem;
+
+  @include tablet-s {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__img-right {
+    @include tablet-s {
+      position: relative;
+      top: -4rem;
+    }
+  }
 }

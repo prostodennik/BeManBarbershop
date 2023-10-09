@@ -7,6 +7,7 @@ import Price from "./components/Price/Price";
 import Photo from "./components/Photo/Photo";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
+import ModileMenu from "./components/MobileMenu/ModileMenu";
 
 function App() {
   return (

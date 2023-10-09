@@ -1,13 +1,17 @@
 @import "./variables.scss";
+@import "./media.scss";
 
 .App {
-  // max-width: 144rem;
-  // width: 95%;
   margin: 0 auto;
   position: relative;
   color: var(--text-black);
   background: url(./assets/images/bg.png) top center / contain no-repeat;
   padding: 2.4rem;
+  width: 100%;
+
+  @include tablet-s {
+    padding: 0;
+  }
 }
 
 .container {
@@ -65,7 +69,7 @@ html {
   height: 100%;
   position: relative;
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 1.6rem;
+  // font-size: 1.6rem;
 }
 
 * {

@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./Top.scss";
 import TopImgRight from "../../assets/images/top-right.png";
 import Btn from "../Btn/Btn";
 
+import ModileMenu from '../MobileMenu/ModileMenu';
+
 const Top = () => {
 
   return (
+    <>
     <div className='top'>
       <div className="top__left">
         <h1 className="top__title">BE MAN</h1>
@@ -16,6 +19,14 @@ const Top = () => {
         <img src={TopImgRight} alt="" className="top__img" />
       </div>
     </div>
+    <div className="top top_mobile">
+    <ModileMenu />
+    <h1 className="top__title top__title_mobile">BE MAN</h1>
+        <div className="top__subtitle top__subtitle_mobile">место, где каждый <br /> будет чувствовать <br /> себя джентльменом</div>
+        <Btn />
+    </div>
+    </>
+    
   );
 };
 

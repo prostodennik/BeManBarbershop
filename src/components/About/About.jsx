@@ -9,7 +9,7 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="About">
       <h3 className="about__title">о нас</h3>
       <div className="about__subtitle">
         Мы команда профессионалов с многолетним опытом, которые создали новое

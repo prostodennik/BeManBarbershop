@@ -1,8 +1,14 @@
+@import "../../media.scss";
+
 .footer {
   background: var(--text-black);
   color: var(--text-white);
   display: flex;
   padding: 6rem 3rem;
+
+  @include tablet-s {
+    flex-direction: column;
+  }
 
   &__img {
     width: fit-content;
@@ -13,11 +19,29 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-size: 1.4rem;
+
+    @include tablet-s {
+      margin: 0 0 2.4rem;
+    }
   }
 
   &__right {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    height: fit-content;
+
+    @include tablet-s {
+      flex-direction: column;
+    }
+  }
+
+  &__right-left {
+    margin: 0 2.4rem 0 0;
+    font-size: 1.4rem;
+
+    @include tablet-s {
+      margin: 0 0 2.4rem;
+    }
   }
 }

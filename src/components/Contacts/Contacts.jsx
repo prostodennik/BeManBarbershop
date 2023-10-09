@@ -9,7 +9,7 @@ import './Contacts.scss'
 
 const Contacts = () => {
   return (
-    <div className='contacts'>
+    <div className='contacts' id="Contacts">
       <h2 className="contacts__title">контакты</h2>
       <ul className="contacts__list">
         <li className="contacts__item">
@@ -21,12 +21,17 @@ const Contacts = () => {
             Г. Люберцы, ул. Юности, д.2
           </div>
           <div className="contacts__tel" style={{margin: '0 0 2.4rem'}}>
+            <a href="/">
             <Tel style={{margin: '0 1rem 0 0'}}/>
             +7 (ххх) ххх-хх-хх
+            </a>
+            
           </div>
           <div className="contacts__mail" style={{margin: '0 0 2.4rem'}}>
+            <a href="/">
             <Mail style={{margin: '0 1rem 0 0'}}/>
             BEMANBARBERSHOP@MAIL.RU
+            </a>
           </div>
           </li> 
       </ul>

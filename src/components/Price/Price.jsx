@@ -3,7 +3,7 @@ import Btn from "../Btn/Btn";
 
 import "./Price.scss";
 
-const mockData = {
+export const mockData = {
   data: [
     { title: "Стрижка мужская", price: 1400, id: 0 },
     { title: "Стрижка детская (от 3 до 10 лет)", price: 1000, id: 0 },
@@ -17,12 +17,12 @@ const mockData = {
     { title: "камуфляж головы", price: 1000, id: 1 },
     { title: "мытье и укладка", price: 400, id: 1 },
     { title: "окантовка с подбриванием", price: 300, id: 1 },
-    { title: "депиляция воском", price: 400 / 1000, id: 1 },
+    { title: "депиляция воском", price: '400 / 1000', id: 1 },
     { title: "черная маска", price: 1000, id: 1 },
 
     { title: "друг + друг", price: 2400, id: 2 },
     {
-      title: "папа + сын (стрижка мужская .и детская от 3 до 10 лет)",
+      title: "папа + сын (стрижка мужская и детская от 3 до 10 лет)",
       price: 1900,
       id: 2,
     },
@@ -49,18 +49,19 @@ const Price = () => {
   }, [menuId]);
 
   return (
-    <div className="price">
+    <div className="price" id="Price">
       <h2 className="price__title">Услуги и цены</h2>
       <h3 className="price__subtitle">Добро пожаловать в Be man barbershop!</h3>
       <ul className="price__tab">
         {mockData &&
-          mockData.meta.dataTypes.map((item) => {
+          mockData.meta.dataTypes.map((item, index) => {
             return (
               <li
                 className={`price__tab-item ${
                   item.id === menuId ? "active" : ""
                 }`}
                 onClick={() => setMenuId(item.id)}
+                key={index}
               >
                 {item.text}
               </li>
@@ -69,13 +70,13 @@ const Price = () => {
       </ul>
       <ul className="price__services">
         {data.map((item, index) => {
-            return (
-              <li className="price__services-item">
-                <div className="price__services-services">{item.title}</div>
-                <div className="price__services-price">{item.price}</div>
-              </li>
-            );
-          })}
+          return (
+            <li className="price__services-item" key={index}>
+              <div className="price__services-services">{item.title}</div>
+              <div className="price__services-price">{item.price}</div>
+            </li>
+          );
+        })}
       </ul>
       <Btn />
     </div>

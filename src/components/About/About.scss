@@ -1,26 +1,50 @@
+@import "../../media.scss";
+
 .about {
   background: url(../../assets/images/bg.png) top center / contain no-repeat;
   padding: 10rem 0 0;
+
+  @include tablet-s {
+    padding: 20rem 0 0;
+  }
 
   &__title {
     text-align: center;
     font-size: 4rem;
     margin: 0 0 0.7rem;
     color: var(--primary);
+    text-transform: uppercase;
   }
 
   &__subtitle {
     text-align: center;
     padding: 0 10rem 0;
     margin: 0 0 8.8rem;
+    font-size: 1.6rem;
+
+    @include tablet-s {
+      padding: 0 5rem 0;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0 5%;
-    width: 70%;
+    gap: 0 2.4rem;
+    width: 60%;
     margin: auto;
+
+    @include desktop-m {
+      width: 100%;
+    }
+
+    @include tablet-s {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 4rem 0 0;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 
   &__item {
@@ -32,6 +56,11 @@
     text-align: center;
     padding: 15rem 2rem 2rem;
     position: relative;
+
+    @include tablet-s {
+      scroll-snap-align: center;
+      min-width: 20rem;
+    }
   }
 
   &__img {
@@ -44,6 +73,10 @@
     right: 0;
     bottom: 0;
     margin: auto;
+  }
+
+  &__desc {
+    font-size: 1.6rem;
   }
 
   &__btn-wrap {

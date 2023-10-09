@@ -1,3 +1,5 @@
+@import "../../media.scss";
+
 .contacts {
   padding: 6rem 0 0;
   margin: 0 0 6rem;
@@ -7,10 +9,22 @@
     margin: 0 0 2.4rem;
     color: var(--primary);
     text-transform: uppercase;
+    font-size: 4rem;
   }
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 6rem;
+
+    @include tablet-s {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    font-size: 1.4rem;
   }
 }
