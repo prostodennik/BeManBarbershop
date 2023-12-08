@@ -41,7 +41,7 @@ describe("Price component", () => {
   const service = wrapper.find(".price__services-item").at(0);
   const data = mockData.data.filter((item) => item.id === mockData.meta.dataTypes[0].id)[0];
   expect(service.find(".price__services-services").text()).toEqual(data.title);
-  expect(parseInt(service.find(".price__services-price").text())).toEqual(data.price);
+  expect(service.find(".price__services-price").text()).toEqual(data.price);
 });
 
 it("renders the correct number of services in each tab", () => {

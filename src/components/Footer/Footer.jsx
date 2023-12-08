@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 import { ReactComponent as Logo } from "../../assets/icons/logo-white.svg";
-import { ReactComponent as Vk } from "../../assets/icons/vk.svg";
-import In from "../../assets/images/inst.png";
 import Cat from "../../assets/images/cat.jpg";
 
 import "./Footer.scss";
@@ -31,6 +29,7 @@ const Footer = () => {
               width: "100%",
               bottom: "0",
               left: "0",
+              zIndex: "99",
             }}
           />
           <div
@@ -44,6 +43,7 @@ const Footer = () => {
               top: "50%",
               left: "50%",
               transform: "translate(-50%, -50%)",
+              zIndex: "100",
             }}
           >
             by DENDI
@@ -55,15 +55,17 @@ const Footer = () => {
           style={{ margin: "0 0 2.4rem", maxWidth: "100%" }}
           onClick={handleClick}
         />
-        ИП ИВАНОВ ИВАН ИВАНОВИЧ <br /> ОГРН: ХХХХХХХХХХХХ ИНН: ХХХХХХХХХХХ
+        ИП Бабаева Насиба Алиевна <br /> ОГРН: 321508100297833 ИНН: 500404764301
       </div>
       <div className="footer__right">
         <div className="footer__right-left">
           Подписывайся на нас <br /> в социальных сетях!
         </div>
         <div className="footer__right-right">
-          <Vk style={{ margin: "0 2.4rem 0 0" }} />
-          <img src={In} className="footer__img" alt="In" />
+          <a href="/" className="footer__right-vk">
+          </a>
+          <a href="/" className="footer__right-in">
+          </a>
         </div>
       </div>
     </div>

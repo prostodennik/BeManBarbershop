@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /index.html
+Allow: /static/media/
+Disallow: /static/css/
+Disallow: /static/js/
