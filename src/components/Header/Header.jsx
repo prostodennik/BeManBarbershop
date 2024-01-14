@@ -4,13 +4,15 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 
 import './Header.scss';
 
-const Header = () => {
+const Header = ({ props }) => {
     const ScrollToElement = () => {
         scroll.scrollTo(0, {
             duration: 500,
             smooth: true,
         });
     };
+
+    props('header');
 
     return (
         <div className="header">

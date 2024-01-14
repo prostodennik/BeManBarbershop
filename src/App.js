@@ -8,10 +8,19 @@ import Photo from './components/Photo/Photo';
 import Contacts from './components/Contacts/Contacts';
 import Footer from './components/Footer/Footer';
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/service-worker.js');
+    });
+}
+
 function App() {
+    const Ololo = (props) => {
+        console.log(props);
+    };
     return (
         <div className="App">
-            <Header />
+            <Header props={Ololo} />
             <Top />
             <About />
             <Price />
