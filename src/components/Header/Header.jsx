@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 import './Header.scss';
 
-const Header = ({ props }) => {
+const Header = () => {
     const { pathname } = useLocation();
 
     const ScrollToElement = () => {
@@ -14,8 +14,6 @@ const Header = ({ props }) => {
             smooth: true,
         });
     };
-
-    props('header');
 
     return (
         <div className="header">

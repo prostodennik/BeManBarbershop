@@ -13,12 +13,9 @@ if ('serviceWorker' in navigator) {
 }
 
 function App() {
-    const Ololo = (props) => {
-        console.log(props);
-    };
     return (
         <div className="App">
-            <Header props={Ololo} />
+            <Header />
             <div className="container">
                 <Routes>
                     <Route path="/" element={<MainPage />} />
