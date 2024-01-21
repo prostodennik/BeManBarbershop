@@ -1,10 +1,13 @@
 import { React } from 'react';
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { useLocation } from 'react-router-dom';
 
 import './Header.scss';
 
 const Header = ({ props }) => {
+    const { pathname } = useLocation();
+
     const ScrollToElement = () => {
         scroll.scrollTo(0, {
             duration: 500,
@@ -17,40 +20,49 @@ const Header = ({ props }) => {
     return (
         <div className="header">
             <div className="header__logo">
-                <Logo />
+                <a href="/">
+                    <Logo />
+                </a>
             </div>
             <nav className="header__nav">
                 <ul className="header__list">
-                    <Link
-                        to="About"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        onClick={ScrollToElement}
-                        style={{ margin: '0 2.4rem 0 0' }}
-                    >
-                        <li className="header__item">О нас</li>
-                    </Link>
-                    <Link
-                        to="Price"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        onClick={ScrollToElement}
-                        style={{ margin: '0 2.4rem 0 0' }}
-                    >
-                        <li className="header__item">Услуги цены</li>
-                    </Link>
-                    <Link
-                        to="Contacts"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        onClick={ScrollToElement}
-                        style={{ margin: '0 2.4rem 0 0' }}
-                    >
-                        <li className="header__item">Контакты</li>
-                    </Link>
+                    {pathname === '/' && (
+                        <>
+                            <Link
+                                to="About"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                onClick={ScrollToElement}
+                                style={{ margin: '0 2.4rem 0 0' }}
+                            >
+                                <li className="header__item">О нас</li>
+                            </Link>
+                            <Link
+                                to="Price"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                onClick={ScrollToElement}
+                                style={{ margin: '0 2.4rem 0 0' }}
+                            >
+                                <li className="header__item">Услуги цены</li>
+                            </Link>
+                            <Link
+                                to="Contacts"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                onClick={ScrollToElement}
+                                style={{ margin: '0 2.4rem 0 0' }}
+                            >
+                                <li className="header__item">Контакты</li>
+                            </Link>
+                        </>
+                    )}
+                    <li className="header__item">
+                        <a href="/stock">Акции</a>
+                    </li>
                 </ul>
             </nav>
             <div className="header__contacts">

@@ -6,11 +6,15 @@ import './Btn.scss';
 const Btn = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    if (modalIsOpen) {
+    const openModal = () => {
+        setModalIsOpen(true);
         document.body.style.overflow = 'hidden';
-    } else {
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
         document.body.style.overflow = 'visible';
-    }
+    };
 
     const customStyles = {
         content: {
@@ -33,7 +37,7 @@ const Btn = () => {
 
     return (
         <>
-            <button className="btn" onClick={() => setModalIsOpen(true)}>
+            <button className="btn" onClick={openModal}>
                 записаться
             </button>
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={customStyles}>
@@ -48,7 +52,7 @@ const Btn = () => {
                         margin: '0 auto',
                     }}
                 ></iframe>
-                <button className="close" onClick={() => setModalIsOpen(false)}></button>
+                <button className="close" onClick={closeModal}></button>
             </Modal>
         </>
     );

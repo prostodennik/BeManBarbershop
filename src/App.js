@@ -1,12 +1,10 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header';
-import Top from './components/Top/Top';
-import About from './components/About/About';
-import Price from './components/Price/Price';
-import Photo from './components/Photo/Photo';
-import Contacts from './components/Contacts/Contacts';
+import MainPage from './components/MainPage/MainPage';
 import Footer from './components/Footer/Footer';
+import Stock from './components/Stock/Stock';
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
@@ -21,11 +19,12 @@ function App() {
     return (
         <div className="App">
             <Header props={Ololo} />
-            <Top />
-            <About />
-            <Price />
-            <Photo />
-            <Contacts />
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<MainPage />} />
+                    <Route path="/stock" element={<Stock />} />
+                </Routes>
+            </div>
             <Footer />
         </div>
     );
