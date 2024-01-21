@@ -1,14 +1,13 @@
-@import "./media.scss";
+@import './media.scss';
 
 :root {
-  --primary: #B88D57;
-  --text-black: #000000;
-  --hover: #8B693F;
-  --text-white: #FFFFFF;
+    --primary: #11100f;
+    --text-black: #000000;
+    --hover: #8b693f;
+    --text-white: #ffffff;
     font-size: 10px; //TODO 7.5px
 
     @include tablet-s {
-      font-size: 7.5px;
+        font-size: 7.5px;
     }
- 
 }
