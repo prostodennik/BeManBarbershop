@@ -19,7 +19,7 @@ const Header = () => {
         <div className="header">
             <div className="header__logo">
                 <a href="/">
-                    <Logo />
+                    <Logo className="header__logo-icon" />
                 </a>
             </div>
             <nav className="header__nav">

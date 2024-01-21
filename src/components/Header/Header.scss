@@ -15,6 +15,12 @@
         display: none;
     }
 
+    &__logo-icon {
+        @include tablet-l {
+            width: 11rem;
+        }
+    }
+
     &__list {
         display: flex;
     }
@@ -28,6 +34,10 @@
         text-align: center;
         color: var(--primary);
         font-weight: 500;
+
+        @include tablet-l {
+            font-size: 1.6rem;
+        }
 
         &:last-child {
             margin: 0;
@@ -44,6 +54,10 @@
 
         &-left {
             margin: 0 7rem 0 0;
+
+            @include tablet-l {
+                margin: 0 3rem 0 0;
+            }
         }
 
         &-right {
