@@ -9,8 +9,6 @@ const MobileMenu = ({ cn }) => {
     const [isOpen, setIsOpen] = useState(false);
     const { pathname } = useLocation();
 
-    const [menu, setMenu] = useState(window.innerWidth <= 768 ? true : false);
-
     const openMenu = () => {
         setIsOpen(true);
         document.body.style.overflow = 'hidden';
