@@ -16,9 +16,9 @@ const InstallPWA = () => {
         if (deferredPrompt !== null) {
             const timer = setTimeout(() => {
                 setShowPrompt(true);
-            }, 3000); // 3 seconds delay
+            }, 3000);
 
-            return () => clearTimeout(timer); // Clean up on unmount
+            return () => clearTimeout(timer);
         }
     }, [deferredPrompt]);
 
