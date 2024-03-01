@@ -15,8 +15,8 @@ if ('serviceWorker' in navigator) {
 function App() {
     return (
         <div className="App">
-            <Header />
             <div className="container">
+                <Header />
                 <Routes>
                     <Route path="/" element={<MainPage />} />
                     <Route path="/stock" element={<Stock />} />

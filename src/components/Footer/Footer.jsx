@@ -71,6 +71,15 @@ const Footer = () => {
                         className="footer__right-in"
                         aria-label="Ссылка на нашу страницу в Instagram"
                     ></a>
+                    {/* <a href="https://webmaster.yandex.ru/siteinfo/?site=https://bemanbarbershop.ru">
+                        <img
+                            width="88"
+                            height="31"
+                            alt=""
+                            border="0"
+                            src="https://yandex.ru/cycounter?https://bemanbarbershop.ru&theme=dark&lang=ru"
+                        />
+                    </a> */}
                 </div>
             </div>
         </div>
