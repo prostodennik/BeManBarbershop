@@ -160,14 +160,31 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         text-align: center;
+    }
+
+    &__list {
+        text-align: right;
     }
 
     &__item {
         font-size: 3.4rem;
         text-transform: uppercase;
         cursor: pointer;
+        margin-bottom: 2.4rem;
+
+        &-submenu {
+            margin-bottom: 1.4rem;
+            text-align: right;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        // &:nth-child(1) {
+        //     margin-bottom: 2.4rem;
+        // }
     }
 
     &__contacts-left {
