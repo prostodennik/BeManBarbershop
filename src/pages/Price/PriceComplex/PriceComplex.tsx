@@ -33,7 +33,7 @@ const PriceComplex = () => {
                         );
                     })}
                 </ul>
-                <Btn />
+                <Btn style={{ margin: '0 0 2.4rem 0 ' }} />
             </div>
         </>
     );

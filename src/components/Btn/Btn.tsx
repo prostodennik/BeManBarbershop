@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from 'react-modal';
 
 import './Btn.scss';
 
-const Btn = () => {
+type BtnProps = {
+    style?: {};
+};
+
+const Btn = ({ style }: BtnProps) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const openModal = () => {
@@ -16,7 +20,7 @@ const Btn = () => {
         document.body.style.overflow = 'visible';
     };
 
-    const customStyles = {
+    const customStyles: Object = {
         content: {
             left: '0',
             right: '0',
@@ -53,7 +57,7 @@ const Btn = () => {
                         margin: '0 auto',
                     }}
                 ></iframe>
-                <button className="close" onClick={closeModal}></button>
+                <button className="close" onClick={closeModal} style={style}></button>
             </Modal>
         </>
     );
