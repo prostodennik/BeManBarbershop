@@ -1,7 +1,7 @@
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { useLocation } from 'react-router-dom';
-import Popup from '../../ui-kit/Popup';
+import Popup from '../../ui-kit/Popup/Popup';
 
 import './Header.scss';
 

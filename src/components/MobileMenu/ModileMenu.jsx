@@ -4,7 +4,7 @@ import { ReactComponent as Logo } from '../../assets/icons/logo-white.svg';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Button from '../Btn/Btn';
 import { useLocation } from 'react-router-dom';
-import Popup from '../../ui-kit/Popup';
+import Popup from '../../ui-kit/Popup/Popup';
 
 const MobileMenu = ({ cn }) => {
     const [isOpen, setIsOpen] = useState(false);
