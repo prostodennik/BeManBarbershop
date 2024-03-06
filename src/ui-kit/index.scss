@@ -1,0 +1,32 @@
+.tippy-box {
+    background-color: transparent !important;
+    font-size: unset !important;
+}
+
+.tippy-content {
+    padding: 0 !important;
+}
+
+.popup {
+    &__element {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        color: var(--primary);
+        font-size: inherit;
+
+        span {
+            font-size: 1.6rem;
+        }
+
+        a {
+            margin-bottom: 1rem;
+            color: var(--text-black);
+            font-size: 1rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+}

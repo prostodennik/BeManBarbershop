@@ -1,7 +1,7 @@
-import { React } from 'react';
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { useLocation } from 'react-router-dom';
+import Popup from '../../ui-kit/Popup';
 
 import './Header.scss';
 
@@ -36,28 +36,30 @@ const Header = () => {
                             >
                                 <li className="header__item">О нас</li>
                             </Link>
-                            <Link
-                                to="Price"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                onClick={ScrollToElement}
-                                style={{ margin: '0 2.4rem 0 0' }}
-                            >
-                                <li className="header__item">Услуги цены</li>
-                            </Link>
-                            <Link
-                                to="Contacts"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                onClick={ScrollToElement}
-                                style={{ margin: '0 2.4rem 0 0' }}
-                            >
-                                <li className="header__item">Контакты</li>
-                            </Link>
                         </>
                     )}
+                    <li className="header__item">
+                        <Popup
+                            position="bottom"
+                            options={{ interactive: true }}
+                            // text="Это обертка"
+                            // subtext="Которую можно сделать вокруг любого элемента"
+                            element={
+                                <>
+                                    <a href="/price-basic">Основное</a>
+                                    <a href="/price-additionally">дополнительно</a>
+                                    <a href="/price-complex">комплекс</a>
+                                </>
+                            }
+                        >
+                            <div>
+                                <h4 className="header__item">Услуги цены</h4>
+                            </div>
+                        </Popup>
+                    </li>
+                    <li className="header__item">Мастера</li>
+                    <li className="header__item">Косметика</li>
+                    <li className="header__item">Контакты</li>
                     <li className="header__item">
                         <a href="/stock">Акции</a>
                     </li>
@@ -65,6 +67,7 @@ const Header = () => {
             </nav>
             <div className="header__contacts">
                 <div className="header__contacts-left">
+                    {/*eslint-disable-next-line*/}
                     <a href="https://wa.me/79995505949" className="header__contacts-whatsapp"></a>
                 </div>
                 <Link to="Contacts" smooth={true} duration={500} spy={true} onClick={ScrollToElement}>

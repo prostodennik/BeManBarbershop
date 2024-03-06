@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from '../../assets/icons/logo-white.svg';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import Button from '../Btn/Btn';
 import { useLocation } from 'react-router-dom';
+import Popup from '../../ui-kit/Popup';
 
 const MobileMenu = ({ cn }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -66,33 +67,40 @@ const MobileMenu = ({ cn }) => {
                                             duration={500}
                                             spy={true}
                                             onClick={ScrollToElement}
-                                            style={{ margin: '0 0 2.4rem', display: 'block' }}
+                                            style={{ margin: '0 2.4rem 0 0' }}
                                         >
-                                            <li className="mobile-menu__item">О нас</li>
-                                        </Link>
-                                        <Link
-                                            to="Price"
-                                            smooth={true}
-                                            duration={500}
-                                            spy={true}
-                                            onClick={ScrollToElement}
-                                            style={{ margin: '0 0 2.4rem', display: 'block' }}
-                                        >
-                                            <li className="mobile-menu__item">Услуги цены</li>
-                                        </Link>
-                                        <Link
-                                            to="Contacts"
-                                            smooth={true}
-                                            duration={500}
-                                            spy={true}
-                                            onClick={ScrollToElement}
-                                            style={{ margin: '0 0 2.4rem', display: 'block' }}
-                                        >
-                                            <li className="mobile-menu__item">Контакты</li>
+                                            <li className="mobile-menu__item" style={{ margin: '0 ' }}>
+                                                О нас
+                                            </li>
                                         </Link>
                                     </>
                                 )}
-                                <li className="mobile-menu__item" style={{ margin: '0 0 2.4rem', display: 'block' }}>
+                                <li className="mobile-menu__item">
+                                    <Popup
+                                        position="bottom"
+                                        options={{ interactive: true, disabled: true }}
+                                        // text="Это обертка"
+                                        // subtext="Которую можно сделать вокруг любого элемента"
+                                        // element={<></>}
+                                    >
+                                        <div>
+                                            <h4 className="mobile-menu__item">Услуги цены</h4>
+                                            <h6 className="mobile-menu__item-submenu">
+                                                <a href="/price-basic">Основное</a>
+                                            </h6>
+                                            <h6 className="mobile-menu__item-submenu">
+                                                <a href="/price-additionally">дополнительно</a>
+                                            </h6>
+                                            <h6 className="mobile-menu__item-submenu">
+                                                <a href="/price-complex">комплекс</a>
+                                            </h6>
+                                        </div>
+                                    </Popup>
+                                </li>
+                                <li className="mobile-menu__item">Мастера</li>
+                                <li className="mobile-menu__item">Косметика</li>
+                                <li className="mobile-menu__item">Контакты</li>
+                                <li className="mobile-menu__item">
                                     <a href="/stock">Акции</a>
                                 </li>
                             </ul>

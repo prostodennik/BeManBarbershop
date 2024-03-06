@@ -41,6 +41,7 @@ const Btn = () => {
                 записаться
             </button>
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={customStyles}>
+                {/*eslint-disable-next-line*/}
                 <iframe
                     src="https://n1005319.yclients.com/"
                     style={{
