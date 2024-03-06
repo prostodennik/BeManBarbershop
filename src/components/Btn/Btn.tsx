@@ -9,6 +9,7 @@ type BtnProps = {
 
 const Btn = ({ style }: BtnProps) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    console.log(style);
 
     const openModal = () => {
         setModalIsOpen(true);
@@ -41,7 +42,7 @@ const Btn = ({ style }: BtnProps) => {
 
     return (
         <>
-            <button className="btn" onClick={openModal}>
+            <button className="btn" onClick={openModal} style={style}>
                 записаться
             </button>
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={customStyles}>
@@ -57,7 +58,7 @@ const Btn = ({ style }: BtnProps) => {
                         margin: '0 auto',
                     }}
                 ></iframe>
-                <button className="close" onClick={closeModal} style={style}></button>
+                <button className="close" onClick={closeModal}></button>
             </Modal>
         </>
     );
