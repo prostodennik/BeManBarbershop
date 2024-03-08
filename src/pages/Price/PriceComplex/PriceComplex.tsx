@@ -1,5 +1,6 @@
 import Btn from '../../../components/Btn/Btn';
 import MobileMenu from '../../../components/MobileMenu/ModileMenu';
+import Photo from '../../../components/Photo/Photo';
 
 import '../Price.scss';
 
@@ -35,6 +36,7 @@ const PriceComplex = () => {
                 </ul>
                 <Btn style={{ margin: '0 0 2.4rem 0 ' }} />
             </div>
+            <Photo style={{ margin: '0 0 2.4rem 0 ' }} />
         </>
     );
 };

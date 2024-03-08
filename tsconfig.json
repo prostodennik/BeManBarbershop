@@ -18,6 +18,5 @@
         "declarationDir": "dist",
         "emitDeclarationOnly": false,
         "outDir": "dist"
-    },
-    "include": ["src"]
+    }
 }
