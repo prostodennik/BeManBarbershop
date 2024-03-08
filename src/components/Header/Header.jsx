@@ -57,9 +57,15 @@ const Header = () => {
                             </div>
                         </Popup>
                     </li>
-                    <li className="header__item">Мастера</li>
-                    <li className="header__item">Косметика</li>
-                    <li className="header__item">Контакты</li>
+                    <li className="header__item">
+                        <a href="/masters">Мастера</a>
+                    </li>
+                    <li className="header__item">
+                        <a href="/cosmetics">Косметика</a>
+                    </li>
+                    <li className="header__item">
+                        <a href="/contacts">Контакты</a>
+                    </li>
                     <li className="header__item">
                         <a href="/stock">Акции</a>
                     </li>

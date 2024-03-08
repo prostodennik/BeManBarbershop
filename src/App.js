@@ -8,6 +8,9 @@ import Stock from './components/Stock/Stock';
 import PriceBasic from './pages/Price/PriceBasic/PriceBasic';
 import PriceAdditionally from './pages/Price/PriceAdditionally/PriceAdditionally';
 import PriceComplex from './pages/Price/PriceComplex/PriceComplex';
+import Contacts from './pages/Contacts/Contacts';
+import Сosmetics from './pages/Сosmetics/Сosmetics';
+import Masters from './pages/Masters/Masters';
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
@@ -26,6 +29,9 @@ function App() {
                     <Route path="/price-basic" element={<PriceBasic />} />
                     <Route path="/price-additionally" element={<PriceAdditionally />} />
                     <Route path="/price-complex" element={<PriceComplex />} />
+                    <Route path="/contacts" element={<Contacts />} />
+                    <Route path="/cosmetics" element={<Сosmetics />} />
+                    <Route path="/masters" element={<Masters />} />
                 </Routes>
             </div>
             <Footer />
