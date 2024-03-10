@@ -1,0 +1,113 @@
+@import '../../media.scss';
+
+.cosmetics {
+    margin-top: 14.3rem;
+
+    &__title-block {
+        margin-bottom: 0.9rem;
+    }
+
+    &__subtitle {
+        @include tablet-s {
+            margin: 0 1.86rem;
+        }
+    }
+
+    &__morgans {
+        display: flex;
+        justify-content: center;
+        
+        margin: 7.8rem 0 0 0;
+
+        img {
+            max-width: 86.4rem;
+        }
+    }
+
+    &__brand-description {
+        display: flex;
+        justify-content: center;
+
+        margin: 2.9rem 0 2.7rem 0;
+
+        p {
+            max-width: 78rem;
+
+            font-weight: 400;
+            font-size: 1.7rem;
+            letter-spacing: 0.06rem;
+            text-align: center;
+        }
+
+        @include tablet-s {
+            font-size: 1.56rem;
+            margin: 0px 4.4rem;
+        }
+    }
+
+    &__brand-benefits {
+        font-weight: 400;
+        font-size: 2.4rem;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablet-s {
+            font-size: 2.08rem;
+            margin: 2.66rem 2rem 0 2rem;
+        }
+    }
+
+    &__brand-benefits-title {
+        font-size: 2.4rem;
+        letter-spacing: 0.06rem;
+        max-width: 58rem;
+
+        @include tablet-s {
+            font-size: 2.128rem;
+        }
+    }
+
+    &__benefits {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+
+        column-gap: 3rem;
+
+        margin: 3.5rem 0 0 0;
+
+        @include tablet-s {
+            display: flex;
+            flex-wrap: wrap;
+
+            margin: 3.2rem 0 0 0;
+
+            row-gap: 2.92rem;
+            
+            font-size: 1.56rem;
+        }
+    }
+
+    &__benefits-item {
+        flex: 0 0 17.7rem;
+
+        @include tablet-s {
+            font-size: 1.59rem;
+            order: 1;
+
+            flex-basis: 17.6rem;
+            
+            img {
+                max-width: 5.23rem;
+                max-height: 5.23rem;
+            }
+        }
+    }
+
+    @include tablet-s {
+        margin-top: 6.7rem;
+    }
+}

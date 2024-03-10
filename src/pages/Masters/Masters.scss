@@ -1,0 +1,19 @@
+@import '../../media.scss';
+
+.masters {
+    margin-top: 14.3rem;
+
+    &__title-block {
+        margin-bottom: 0.9rem;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @include tablet-s {
+        margin: 4.3rem 0 2.2rem 0;
+    }
+}
