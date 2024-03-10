@@ -9,7 +9,6 @@ type BtnProps = {
 
 const Btn = ({ style }: BtnProps) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
-    console.log(style);
 
     const openModal = () => {
         setModalIsOpen(true);
