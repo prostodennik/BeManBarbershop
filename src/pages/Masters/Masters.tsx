@@ -13,14 +13,14 @@ import MobileMenu from '../../components/MobileMenu/ModileMenu';
 import './Masters.scss';
 
 const getDataFromYclients = async () => {
-    const url = 'https://api.yclients.com/api/v1/company/932723/clients';
+    const url = 'https://api.yclients.com/api/v1/company/932723';
     const headers = {
         Accept: 'application/vnd.yclients.v2+json',
-        Authorization: 'Bearer pybmjppb2t394rk67cy4,User 2c45580b087556463746fc6ac4cdcec0',
+        Authorization: 'Bearer pybmjppb2t394rk67cy4, User 2c45580b087556463746fc6ac4cdcec0',
     };
 
     try {
-        const response = await axios.post(url, { headers });
+        const response = await axios.get(url, { headers });
         console.log(response.data);
     } catch (error) {
         console.error('Ошибка при получении данных:', error);
