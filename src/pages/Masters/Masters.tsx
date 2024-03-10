@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { IMastersCardProps } from '../../components/MastersCard/type';
 import { MastersCard } from '../../components/MastersCard/MastersCard';
 
@@ -17,9 +16,9 @@ const mockDataMasters: IMastersCardProps[] = [
         alt: 'Барбер',
         paragraphs: [
             'Бек – это настоящий профессионал своего дела, обладающий не только высоким уровнем навыков стрижки и бритья, но и особым талантом общения с клиентами.',
-            'Он стремится быть лучшим в своей области и всегда готов учиться новому, чтобы предложить своим клиентам самые современные и качественные услуги.'
+            'Он стремится быть лучшим в своей области и всегда готов учиться новому, чтобы предложить своим клиентам самые современные и качественные услуги.',
         ],
-        photoSrc: Master2 as string
+        photoSrc: Master2 as string,
     },
     {
         name: 'Анастасия',
@@ -27,35 +26,30 @@ const mockDataMasters: IMastersCardProps[] = [
         alt: 'Барбер',
         paragraphs: [
             'Анастасия – это настоящий профессионал своего дела, обладающий не только высоким уровнем навыков стрижки и бритья, но и особым талантом общения с клиентами.',
-            'Она стремится быть лучшей в своей области и всегда готова учиться новому, чтобы предложить своим клиентам самые современные и качественные услуги.'
+            'Она стремится быть лучшей в своей области и всегда готова учиться новому, чтобы предложить своим клиентам самые современные и качественные услуги.',
         ],
-        photoSrc: Master1 as string
-    }
-]
+        photoSrc: Master1 as string,
+    },
+];
 
 const Masters = () => {
     return (
         <>
-            <MobileMenu cn={'mobile-menu-stock'} />
+            <MobileMenu cn="mobile-menu-mob" />
 
-            <div className='masters container'>
-                <div className='masters__title-block'>
-                    <h2 className='masters__title page-title'>
-                        Наши мастера
-                    </h2>
-                    <h3 className='masters__subtitle page-subtitle'>
-                        Знакомьтесь с командой профессионалов!
-                    </h3>
+            <div className="masters container">
+                <div className="masters__title-block">
+                    <h2 className="masters__title page-title">Наши мастера</h2>
+                    <h3 className="masters__subtitle page-subtitle">Знакомьтесь с командой профессионалов!</h3>
                 </div>
 
-                <div className='masters__list'>
+                <div className="masters__list">
                     {mockDataMasters.map((masterProps: IMastersCardProps, index: number) => {
-                        return <MastersCard {...masterProps} key={index} />
+                        return <MastersCard {...masterProps} key={index} />;
                     })}
                 </div>
-
             </div>
-            <div className='sign-up'>
+            <div className="sign-up">
                 <Btn style={{ width: '22.8rem' }} />
             </div>
         </>

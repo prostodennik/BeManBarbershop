@@ -6,7 +6,11 @@ import Button from '../Btn/Btn';
 import { useLocation } from 'react-router-dom';
 import Popup from '../../ui-kit/Popup/Popup';
 
-const MobileMenu = ({ cn }) => {
+type MobileMenuProps = {
+    cn?: string;
+};
+
+const MobileMenu = ({ cn }: MobileMenuProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const { pathname } = useLocation();
 
@@ -98,12 +102,14 @@ const MobileMenu = ({ cn }) => {
                                     </Popup>
                                 </li>
                                 <li className="mobile-menu__item">
-                                    <a href='/masters'>Мастера</a>
+                                    <a href="/masters">Мастера</a>
                                 </li>
                                 <li className="mobile-menu__item">
-                                    <a href='/cosmetics'>Косметика</a>
+                                    <a href="/cosmetics">Косметика</a>
                                 </li>
-                                <li className="mobile-menu__item">Контакты</li>
+                                <li className="mobile-menu__item">
+                                    <a href="/contacts">Контакты</a>
+                                </li>
                                 <li className="mobile-menu__item">
                                     <a href="/stock">Акции</a>
                                 </li>

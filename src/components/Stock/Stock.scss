@@ -19,23 +19,3 @@
         width: 70rem;
     }
 }
-
-.mobile-menu-stock {
-    .mobile-menu {
-        &__whatsapp {
-            background-color: var(--primary);
-
-            &:hover {
-                background-color: var(--hover);
-            }
-        }
-
-        &__logo {
-            g {
-                path {
-                    fill: var(--text-black);
-                }
-            }
-        }
-    }
-}
