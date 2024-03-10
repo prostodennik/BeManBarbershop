@@ -97,8 +97,12 @@ const MobileMenu = ({ cn }) => {
                                         </div>
                                     </Popup>
                                 </li>
-                                <li className="mobile-menu__item">Мастера</li>
-                                <li className="mobile-menu__item">Косметика</li>
+                                <li className="mobile-menu__item">
+                                    <a href='/masters'>Мастера</a>
+                                </li>
+                                <li className="mobile-menu__item">
+                                    <a href='/cosmetics'>Косметика</a>
+                                </li>
                                 <li className="mobile-menu__item">Контакты</li>
                                 <li className="mobile-menu__item">
                                     <a href="/stock">Акции</a>
