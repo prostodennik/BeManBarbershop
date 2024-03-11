@@ -10,7 +10,7 @@ const Stock = () => {
     return (
         <>
             <InstallPWA />
-            <MobileMenu cn={'mobile-menu-stock'} />
+            <MobileMenu cn={'mobile-menu-mob'} />
             <div className="stock__img-wrap">
                 <img className="stock__img" src={ImgStockOne} alt="ImgStock" />
                 <img className="stock__img" src={ImgStockTwo} alt="ImgStock" />
