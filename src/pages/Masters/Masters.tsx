@@ -1,6 +1,4 @@
 import axios from 'axios';
-
-import * as React from 'react';
 import { IMastersCardProps } from '../../components/MastersCard/type';
 import { MastersCard } from '../../components/MastersCard/MastersCard';
 
@@ -21,7 +19,7 @@ const getDataFromYclients = async () => {
 
     try {
         const response = await axios.get(url, { headers });
-        console.log(response.data);
+        // console.log(response.data);
     } catch (error) {
         console.error('Ошибка при получении данных:', error);
     }
@@ -55,7 +53,7 @@ const mockDataMasters: IMastersCardProps[] = [
 const Masters = () => {
     return (
         <>
-            <MobileMenu cn={'mobile-menu-stock'} />
+            <MobileMenu cn="mobile-menu-mob" />
 
             <div className="masters container">
                 <div className="masters__title-block">

@@ -10,4 +10,8 @@
     @include tablet-s {
         font-size: 7.5px;
     }
+
+    @include mobile-s {
+        font-size: 5px;
+    }
 }

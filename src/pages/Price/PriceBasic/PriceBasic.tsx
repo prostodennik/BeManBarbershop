@@ -20,7 +20,7 @@ export const mockData = {
 const PriceBasic = () => {
     return (
         <>
-            <MobileMenu cn={'mobile-menu-stock'} />
+            <MobileMenu cn="mobile-menu-mob" />
 
             <div className="price" id="Price">
                 <h2 className="price__title">Услуги и цены</h2>

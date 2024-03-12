@@ -37,6 +37,7 @@
 
         &-right {
             display: flex;
+            align-items: center;
         }
 
         &-vk {
@@ -62,10 +63,15 @@
             width: 3.6rem;
             height: 2.2rem;
             transition: all 0.3s;
+            margin: 0 2.4rem 0 0;
 
             &:hover {
                 background-color: var(--hover);
             }
+        }
+
+        &-privacy {
+            font-size: 1.6rem;
         }
     }
 

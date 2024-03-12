@@ -11,7 +11,7 @@
 
     &__photo-container {
         flex: 0 0 50%;
-        
+
         max-width: 62.4rem;
         max-height: 59.6rem;
     }
@@ -22,7 +22,7 @@
         letter-spacing: 0.1rem;
 
         text-transform: uppercase;
-        
+
         color: var(--primary);
 
         margin: 0;
@@ -43,7 +43,7 @@
         font-size: 1.7rem;
         letter-spacing: 0.06rem;
 
-        margin-top: 0.7rem; 
+        margin-top: 0.7rem;
     }
 
     @include tablet-s {
@@ -60,6 +60,10 @@
         &__photo-container {
             margin-left: -25%;
             width: max-content;
+
+            @include mobile-s {
+                width: auto;
+            }
         }
 
         img {

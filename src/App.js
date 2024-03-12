@@ -11,6 +11,7 @@ import PriceComplex from './pages/Price/PriceComplex/PriceComplex';
 import Contacts from './pages/Contacts/Contacts';
 import Сosmetics from './pages/Сosmetics/Сosmetics';
 import Masters from './pages/Masters/Masters';
+import Privacy from './pages/Privacy/Privacy';
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/contacts" element={<Contacts />} />
                     <Route path="/cosmetics" element={<Сosmetics />} />
                     <Route path="/masters" element={<Masters />} />
+                    <Route path="/privacy" element={<Privacy />} />
                 </Routes>
             </div>
             <Footer />

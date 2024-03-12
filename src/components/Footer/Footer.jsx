@@ -80,6 +80,9 @@ const Footer = () => {
                             src="https://yandex.ru/cycounter?https://bemanbarbershop.ru&theme=dark&lang=ru"
                         />
                     </a> */}
+                    <a href="/privacy" className="footer__right-privacy">
+                        Политика конфиденциальности
+                    </a>
                 </div>
             </div>
         </div>
