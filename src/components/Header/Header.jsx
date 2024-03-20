@@ -69,6 +69,9 @@ const Header = () => {
                     <li className="header__item">
                         <a href="/stock">Акции</a>
                     </li>
+                    <li className="header__item">
+                        <a href="/blog">Блог</a>
+                    </li>
                 </ul>
             </nav>
             <div className="header__contacts">

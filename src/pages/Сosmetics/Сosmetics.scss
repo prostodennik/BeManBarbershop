@@ -16,7 +16,7 @@
     &__morgans {
         display: flex;
         justify-content: center;
-        
+
         margin: 7.8rem 0 0 0;
 
         img {
@@ -72,7 +72,7 @@
 
     &__benefits {
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
 
         column-gap: 3rem;
@@ -86,7 +86,7 @@
             margin: 3.2rem 0 0 0;
 
             row-gap: 2.92rem;
-            
+
             font-size: 1.56rem;
         }
     }
@@ -99,7 +99,7 @@
             order: 1;
 
             flex-basis: 17.6rem;
-            
+
             img {
                 max-width: 5.23rem;
                 max-height: 5.23rem;

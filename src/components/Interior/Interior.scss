@@ -1,0 +1,23 @@
+@import '../../media.scss';
+
+.interior {
+    display: grid;
+    padding: 6rem 0 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2.4rem;
+
+    @include tablet-s {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem 0;
+        justify-content: center;
+    }
+
+    & img {
+        width: 50rem;
+
+        @include tablet-s {
+            width: auto;
+        }
+    }
+}
