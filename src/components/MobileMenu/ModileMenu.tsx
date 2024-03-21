@@ -113,6 +113,9 @@ const MobileMenu = ({ cn }: MobileMenuProps) => {
                                 <li className="mobile-menu__item">
                                     <a href="/stock">Акции</a>
                                 </li>
+                                <li className="mobile-menu__item">
+                                    <a href="/blog">Блог</a>
+                                </li>
                             </ul>
                         </nav>
                         <div className="mobile-menu__contacts">
