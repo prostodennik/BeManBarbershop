@@ -46,7 +46,7 @@ const Btn = ({ style }: BtnProps) => {
             </button>
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={customStyles}>
                 {/*eslint-disable-next-line*/}
-                <iframe
+                {/* <iframe
                     src="https://n1005319.yclients.com/"
                     style={{
                         width: '85%',
@@ -56,7 +56,7 @@ const Btn = ({ style }: BtnProps) => {
                         inset: '0',
                         margin: '0 auto',
                     }}
-                ></iframe>
+                ></iframe> */}
                 <button className="close" onClick={closeModal}></button>
             </Modal>
         </>
